@@ -1,1 +1,54 @@
+body {
+	background-image: url("https://thinkful-ed.github.io/css_layout_exercises/images/outerspace_landscape.jpeg");
+	background-size: cover;
+	margin: 0px;
+}
+.navbar {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16x;
+	font-weight: bold;
+	padding-left: 60px;
+	padding-right: 60px;
+	background-color: gray;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+.homeicon {
+	width: 50px;
+	border-radius: 50px;
+}
+ul {
+	display: flex;
+	flex-direction: row;
+	min-width: 200px;
+	justify-content: space-around;
+	align-content: center;
+	padding-left: 10px;
+	/* align-content: center; */
+}
 
+main {
+	display: flex;
+	justify-content: center;
+}
+.box {
+	width:  600px;
+	height: 300px;
+	display: flex;
+	border-color: green;
+	border:  green dotted 10px;
+	/* justify-content: space-between; */
+	/* 	justify-content: center; */
+}
+.spacecat, .spacedog {
+	width: 200px;
+}
+.spacecat {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.spacedog {
+	display: flex;
+}
