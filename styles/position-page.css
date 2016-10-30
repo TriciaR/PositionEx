@@ -1,6 +1,7 @@
 body {
-	background-image: url("https://thinkful-ed.github.io/css_layout_exercises/images/outerspace_landscape.jpeg");
+ 	background-image: url("https://thinkful-ed.github.io/css_layout_exercises/images/outerspace_landscape.jpeg");
 	background-size: cover;
+	background-repeat: no-repeat;
 	margin: 0px;
 }
 .navbar {
@@ -9,6 +10,7 @@ body {
 	font-weight: bold;
 	padding-left: 60px;
 	padding-right: 60px;
+	padding-top padding-bottom: 0px;
 	background-color: gray;
 	display: flex;
 	flex-direction: row;
@@ -17,6 +19,7 @@ body {
 .homeicon {
 	width: 50px;
 	border-radius: 50px;
+  border: 1px solid black;
 }
 ul {
 	display: flex;
@@ -31,24 +34,33 @@ ul {
 main {
 	display: flex;
 	justify-content: center;
+	align-content: space-between;
 }
 .box {
 	width:  600px;
 	height: 300px;
-	display: flex;
-	border-color: green;
+  position: relative;
+  display: flex;
+  /*padding-top: 50vp;*/
+  transform: translateY(50%);
+  border-color: green;
 	border:  green dotted 10px;
-	/* justify-content: space-between; */
+    /* justify-content: space-between; */
 	/* 	justify-content: center; */
 }
 .spacecat, .spacedog {
 	width: 200px;
 }
 .spacecat {
-	display: flex;
-	justify-content: flex-start;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+	/*display: flex;*/
+	/*justify-content: flex-start;*/
 }
 
 .spacedog {
-	display: flex;
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
 }
